@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-governor-snapshot"
+description = "Enables the governor_snapshot command without any pre-configured scope."
+commands.allow = ["governor_snapshot"]
+
+[[permission]]
+identifier = "deny-governor-snapshot"
+description = "Denies the governor_snapshot command without any pre-configured scope."
+commands.deny = ["governor_snapshot"]

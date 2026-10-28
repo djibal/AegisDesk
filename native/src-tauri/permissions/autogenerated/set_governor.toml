@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-set-governor"
+description = "Enables the set_governor command without any pre-configured scope."
+commands.allow = ["set_governor"]
+
+[[permission]]
+identifier = "deny-set-governor"
+description = "Denies the set_governor command without any pre-configured scope."
+commands.deny = ["set_governor"]

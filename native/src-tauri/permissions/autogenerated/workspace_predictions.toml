@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-workspace-predictions"
+description = "Enables the workspace_predictions command without any pre-configured scope."
+commands.allow = ["workspace_predictions"]
+
+[[permission]]
+identifier = "deny-workspace-predictions"
+description = "Denies the workspace_predictions command without any pre-configured scope."
+commands.deny = ["workspace_predictions"]

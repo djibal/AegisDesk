@@ -1,0 +1,41 @@
+# One permission per command. Nothing is reachable until a capability lists it.
+
+[[permission]]
+identifier = "allow-core-status"
+description = "Read AegisDesk core version and policy."
+commands.allow = ["core_status"]
+
+[[permission]]
+identifier = "allow-validate-site"
+description = "Validate an HTTPS URL before wrapping it."
+commands.allow = ["validate_site"]
+
+[[permission]]
+identifier = "allow-manage-apps"
+description = "List, add, remove and change network policy of wrapped apps."
+commands.allow = ["list_apps", "add_app", "remove_app", "update_network"]
+
+[[permission]]
+identifier = "allow-run-apps"
+description = "Launch, close and wipe isolated app sessions."
+commands.allow = ["launch_app", "close_app", "wipe_session"]
+
+[[set]]
+identifier = "encapsulation-core"
+description = "Everything the local launcher UI needs for the Encapsulation Core."
+permissions = ["allow-manage-apps", "allow-run-apps"]
+
+[[permission]]
+identifier = "allow-fabric"
+description = "Query the local Intelligence Fabric: threat scores, permission advice and stats."
+commands.allow = ["score_host", "advise_permission", "record_permission", "fabric_stats"]
+
+[[permission]]
+identifier = "allow-workspace"
+description = "Read workspace predictions."
+commands.allow = ["workspace_predictions"]
+
+[[permission]]
+identifier = "allow-governor"
+description = "Read resource usage and set per-app limits."
+commands.allow = ["governor_snapshot", "set_app_limits", "set_governor"]

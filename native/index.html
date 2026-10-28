@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AegisDesk</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>AegisDesk</h1>
+      <p id="status">Checking secure core…</p>
+      <p id="mobile-note" hidden></p>
+      <form id="add">
+        <input id="name" placeholder="Name (optional)" />
+        <input id="url" type="url" placeholder="https://app.example.com" required />
+        <select id="mode">
+          <option value="allowList">Own domain only</option>
+          <option value="open">Open</option>
+          <option value="proxy">Via proxy</option>
+          <option value="offline">Offline</option>
+        </select>
+        <input id="extra" placeholder="Extra hosts or proxy URL" />
+        <label><input id="ephemeral" type="checkbox" /> Ephemeral session</label>
+        <button type="submit">Add app</button>
+      </form>
+      <p id="err"></p>
+      <ul id="apps"></ul>
+      <h2>Workspace</h2>
+      <ul id="preds"></ul>
+      <h2>Resources</h2>
+      <label><input id="gov" type="checkbox" checked /> Governor on</label>
+      <label><input id="eco" type="checkbox" /> Battery saver</label>
+      <ul id="res"></ul>
+      <h2>Intelligence Fabric</h2>
+      <p id="fstats"></p>
+      <form id="score"><input id="host" placeholder="Check a domain, e.g. xn--gmal-5qa.com" required /><button>Score</button></form>
+      <pre id="sout"></pre>
+      <ul id="threats"></ul>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

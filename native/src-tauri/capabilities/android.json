@@ -1,0 +1,9 @@
+{
+  "$schema": "../gen/schemas/android-schema.json",
+  "identifier": "android-launcher",
+  "description": "Android IPC boundary for the local launcher window only. Wrapped app windows (app-*) match no capability and therefore have zero IPC access. Custom commands are withheld until their mobile implementations and isolation assumptions are verified.",
+  "windows": ["main"],
+  "platforms": ["android"],
+  "local": true,
+  "permissions": []
+}

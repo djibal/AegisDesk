@@ -1,0 +1,27 @@
+{
+  "version": "2026.10.1",
+  "bias": -3.2,
+  "weights": {
+    "punycode": 2.6,
+    "mixed_script": 3.1,
+    "brand_lookalike": 3.4,
+    "label_entropy": 0.9,
+    "digit_ratio": 1.4,
+    "hyphen_count": 0.35,
+    "subdomain_depth": 0.4,
+    "host_length": 0.02,
+    "risky_tld": 1.6,
+    "tracker_keyword": 1.8,
+    "ip_literal": 2.2,
+    "cross_site": 0.6,
+    "known_good": -4.0
+  },
+  "risky_tlds": ["zip", "mov", "top", "xyz", "ru", "tk", "gq", "cf", "click", "country", "work"],
+  "tracker_keywords": ["track", "pixel", "telemetry", "beacon", "analytics", "fingerprint", "adnxs", "adsrv"],
+  "brands": ["google", "gmail", "microsoft", "office", "apple", "icloud", "paypal", "notion", "figma", "slack", "github", "amazon"],
+  "known_good": ["google.com", "gstatic.com", "googleapis.com", "microsoft.com", "live.com", "apple.com", "notion.so", "figma.com", "slack.com", "slack-edge.com", "github.com", "githubusercontent.com", "linear.app", "cloudflare.com"],
+  "permissions": {
+    "camera": 0.55, "microphone": 0.55, "geolocation": 0.45, "clipboard-read": 0.7,
+    "screen-capture": 0.8, "notifications": 0.15, "usb": 0.9, "midi": 0.6, "persistent-storage": 0.1
+  }
+}
